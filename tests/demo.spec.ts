@@ -11,7 +11,7 @@ test('searches for a player and checks fielding section', async ({ page }) => {
     await expect(nameInput).toBeVisible({ timeout: 5000 });
 
     await nameInput.dblclick();
-    await nameInput.fill('addison barger');
+    await nameInput.fill('alejandro kirk');
 
     // Wait for and click the Search button
     const searchButton = page.getByRole('button', { name: 'Search' });
